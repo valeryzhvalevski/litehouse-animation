@@ -1,2 +1,2 @@
 # litehouse-animation
-https://valeryzhvalevski.github.io/litehouse-animation/tree/parallax
+[https://valeryzhvalevski.github.io/litehouse-animation/]
