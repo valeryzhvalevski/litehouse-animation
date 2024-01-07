@@ -1,0 +1,167 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    background-color: black;
+}
+.wrapper {
+    overflow: hidden;
+}
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 360px;
+}
+.parallax {
+    flex: 1 0 100%;
+    position: relative;
+    overflow: hidden;
+}
+.parallax::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,1) 60%);
+}
+.parallax__list {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.parallax__list li{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.parallax__bg {
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    top: -5%;
+    left: -5%;
+    background: url('./img/background.jpg') 50% 100% / cover no-repeat;
+}
+.parallax__rope {
+    position: absolute;
+    width: 120%;
+    left: -10%;
+}
+.parallax__rope img{
+    width: 100%;
+}
+.parallax__rope_1 {
+    top: 5%;
+    transform: scale(1);
+}
+.parallax__rope_2 {
+    top: -1.66667%;
+    transform: scale(1.05556);
+}
+.parallax__rope_3 {
+    top: -11.66667%;
+    transform: scale(1.3889);
+}
+.parallax__element {
+    position: absolute;
+}
+.parallax__element span{
+    display: inline-block;
+    transform-origin: 50% 0;
+    width: 280px;
+    height: 280px;
+    margin: 0 0 0 140px;
+    animation: swing 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.parallax__element_1 {
+    top: 28%;
+    left: 20%;
+}
+.parallax__element_1 span{
+    background: url('./img/clouds/board-cloud-2.png') 0 0 / 100% no-repeat;
+}
+.parallax__element_2 {
+    top: 46%;
+    left: 40%;
+}
+.parallax__element_2 span{
+    background: url('./img/clouds/board-cloud-1.png') 0 0 / 100% no-repeat;
+}
+.parallax__element_3 {
+    top: 24%;
+    left: 75%;
+}
+.parallax__element_3 span{
+    background: url('./img/clouds/board-birds.png') 0 0 / 100% no-repeat;
+}
+.parallax__rope_2 {
+}
+.parallax__element_4 {
+    top: 10%;
+    left: 17%;
+}
+.parallax__element_4 span{
+    background: url('./img/clouds/board-cloud-1.png') 0 0 / 100% no-repeat;
+}
+.parallax__element_5 {
+    top: 50%;
+    left: 56%;
+}
+.parallax__element_5 span{
+    background: url('./img/clouds/board-cloud-4.png') 0 0 / 100% no-repeat;
+}
+.parallax__rope_3 {
+}
+.parallax__element_6 {
+    top: 30%;
+    left: 57%;
+}
+.parallax__element_6 span{
+    background: url('./img/clouds/board-birds.png') 0 0 / 100% no-repeat;
+}
+.parallax__element_7 {
+    top: 60%;
+    left: 65%;
+}
+.parallax__element_7 span{
+    background: url('./img/clouds/board-cloud-2.png') 0 0 / 100% no-repeat;
+}
+.parallax__element_8 {
+    top: 80%;
+    left: 45%;
+}
+.parallax__element_8 span{
+    background: url('./img/clouds/board-cloud-3.png') 0 0 / 100% no-repeat;
+}
+.parallax__wave {
+    position: absolute;
+    background: url('./img/waves/wave-plain.png') 0 0 no-repeat;
+}
+.parallax__wave_1 {
+}
+.parallax__wave_2 {
+}
+.parallax__wave_3 {
+}
+.parallax__litehouse {
+}
+.parallax__wave_4 {
+}
+.parallax__wave_5 {
+}
+.parallax__wave_6 {
+}
